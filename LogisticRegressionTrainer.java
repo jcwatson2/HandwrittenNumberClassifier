@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Random;
 
 public class LogisticRegressionTrainer {
-	// Todo: change hyper-parameters HERE, like iterations, learning_rate, etc.
 	private static final String COMMA_DELIMITER = ",";
 	private static final String PATH_TO_TRAIN = "./mnist_train.csv";
 	private static final String PATH_TO_TEST = "./mnist_test.csv";
