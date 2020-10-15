@@ -14,11 +14,9 @@ import java.text.DecimalFormat;
 
 
 
-// Todo: you need to change the activation function from relu (current) version to logistic, remember, not only the activation function, but the weight update part as well.
 
 public class NN {
 
-    // Todo: change hyper-parameters below, like MAX_EPOCHS, learning_rate, etc.
 
     private static final String COMMA_DELIMITER = ",";
     private static final String PATH_TO_TRAIN = "./mnist_train.csv";
@@ -198,7 +196,6 @@ public class NN {
 
         }
         
-        // I received help on this portion from another student in the class. We wroked together to solve the problem. 
         
         DecimalFormat format1 = new DecimalFormat("##.##");
 		DecimalFormat format2 = new DecimalFormat("##.####");
