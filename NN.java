@@ -197,61 +197,7 @@ public class NN {
         }
         
         
-        DecimalFormat format1 = new DecimalFormat("##.##");
-		DecimalFormat format2 = new DecimalFormat("##.####");
-
-		
-
-		Double prediction[] = new Double[new_test.length];
-															
-
-		for (int i = 0; i < prediction.length; i++) {
-			prediction[i] = firstLayer(new_test[i]);
-		}
-
-		for (int i = 0; i < prediction.length; i++) {
-			System.out.print(format1.format(prediction[i]) + ",");
-		}
-		
-		PrintWriter writer = new PrintWriter("Q5.txt");
-
-		for (int i = 0; i < wih[0].length; i++) {
-
-			for (int k = 0; k < wih.length; k++) {
-				if (k == wih.length - 1) {
-					writer.print(format2.format(wih[k][i]));
-				} else
-					writer.print(format2.format(wih[k][i]) + ", ");
-
-			}
-			writer.println();
-
-		}
-		System.out.println();
-		// q6
-		PrintWriter writer2 = new PrintWriter("Q6.txt");
-		for (int i = 0; i < who.length; i++) {
-			if (i == who.length - 1)
-				writer2.print(format2.format(who[i]));
-			else
-				writer2.print(format2.format(who[i]) + ", ");
-		}
-		writer2.close();
-		writer.close();
-
-		writer.close();
-		
-		for(Double p : prediction) {
-			if(p < 0.5) {
-				System.out.print("0, ");
-			}
-			else {
-				System.out.print("1, ");
-			}
-		}
-
-
-
+       
     }
 
 
